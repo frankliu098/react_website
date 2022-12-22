@@ -13,13 +13,16 @@ export default function Navbar() {
   const closeMobileMenu = () => setClick(false);
 
   return (
-    <nav class="flex items-center flex-wrap lg:justify-between p-3 shadow-2xl">
-      <div class="sm:block sm:visible fill-current">
+    <nav class="font-mono flex items-center flex-wrap lg:justify-between p-3">
+      <div class="sm:visible fill-current">
         <button
           onClick={handleClick}
-          className="z-50 transform hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 fill-current visible lg:hidden mr-4 flex items-center flex-wrap px-3 py-2 shadow-xl rounded"
+          className="ml-3 hover:scale-125 ease-in-out duration-300 z-50 transform fill-current visible lg:hidden flex items-center flex-wrap p-3 shadow-xl rounded"
         >
-          <FontAwesomeIcon icon={click ? faXmark : faBars} />
+          <FontAwesomeIcon
+            className="w-9 h-9"
+            icon={click ? faXmark : faBars}
+          />
         </button>
       </div>
       {/* <Link to="/" onClick={closeMobileMenu}>
@@ -41,7 +44,7 @@ export default function Navbar() {
             to="/"
             className={
               click
-                ? "font-sans font-thin no-underline visible shadow-xl lg:inline-block text-4xl leading-none rounded mt-4 lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 p-4"
+                ? "no-underline visible shadow-xl lg:inline-block text-4xl leading-none rounded mt-4 lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 p-4"
                 : "no-underline z-50 hidden visible shadow-xl lg:inline-block text-sm px-6 leading-none rounded lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300"
             }
             onClick={closeMobileMenu}
@@ -54,7 +57,7 @@ export default function Navbar() {
             to="/about"
             className={
               click
-                ? "font-sans font-thin no-underline visible shadow-xl lg:inline-block text-4xl leading-none rounded mt-4 lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 p-4"
+                ? "no-underline visible shadow-xl lg:inline-block text-4xl leading-none rounded mt-4 lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 p-4"
                 : "no-underline z-50 hidden visible shadow-xl lg:inline-block text-sm px-6 leading-none rounded lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300"
             }
             onClick={closeMobileMenu}
@@ -67,7 +70,7 @@ export default function Navbar() {
             to="/projects"
             className={
               click
-                ? "font-sans font-thin no-underline visible shadow-xl lg:inline-block text-4xl leading-none rounded mt-4 lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 p-4"
+                ? "no-underline visible shadow-xl lg:inline-block text-4xl leading-none rounded mt-4 lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 p-4"
                 : "no-underline z-50 hidden visible shadow-xl lg:inline-block text-sm px-6 leading-none rounded lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300"
             }
             onClick={closeMobileMenu}
@@ -80,7 +83,7 @@ export default function Navbar() {
             to="/classes"
             className={
               click
-                ? "font-sans font-thin no-underline visible shadow-xl lg:inline-block text-4xl leading-none rounded mt-4 lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 p-4"
+                ? "no-underline visible shadow-xl lg:inline-block text-4xl leading-none rounded mt-4 lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 p-4"
                 : "no-underline z-50 hidden visible shadow-xl lg:inline-block text-sm px-6 leading-none rounded lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300"
             }
             onClick={closeMobileMenu}
@@ -93,7 +96,7 @@ export default function Navbar() {
             to="/footer"
             className={
               click
-                ? "font-sans font-thin no-underline visible shadow-xl lg:inline-block text-4xl leading-none rounded mt-4 lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 p-4"
+                ? "no-underline visible shadow-xl lg:inline-block text-4xl leading-none rounded mt-4 lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 p-4"
                 : "no-underline z-50 hidden visible shadow-xl lg:inline-block text-sm px-6 leading-none rounded lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300"
             }
             onClick={closeMobileMenu}

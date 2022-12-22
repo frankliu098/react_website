@@ -5,13 +5,13 @@ import {
   faBars,
   faXmark,
   faComputerMouse,
-} from "@fortawesome/free-solid-svg-icons";// import Navbar from "./navbar";
+} from "@fortawesome/free-solid-svg-icons"; // import Navbar from "./navbar";
 
 export default function Footer() {
   return (
     <div>
       {" "}
-      <div className="bg-gray-400">
+      <div className="font-mono bg-gray-400">
         <Navbar />
         <div className="bg-gray-400 h-screen w-screen">Hello</div>
       </div>
@@ -26,12 +26,15 @@ function Navbar() {
 
   return (
     <nav class="text-gray-900 hover:text-gray-900 flex items-center flex-wrap lg:justify-between p-3 shadow-2xl">
-      <div class="text-gray-900 hover:text-gray-900 sm:block sm:visible fill-current">
+      <div class="text-gray-900 hover:text-gray-900 sm:visible fill-current">
         <button
           onClick={handleClick}
-          className="z-50 transform hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 fill-current visible lg:hidden mr-4 flex items-center flex-wrap px-3 py-2 shadow-xl rounded"
+          className="ml-3 hover:scale-125 ease-in-out duration-300 z-50 transform fill-current visible lg:hidden flex items-center flex-wrap p-3 shadow-xl rounded"
         >
-          <FontAwesomeIcon icon={click ? faXmark : faBars} />
+          <FontAwesomeIcon
+            className="w-9 h-9"
+            icon={click ? faXmark : faBars}
+          />
         </button>
       </div>
       <div
@@ -46,7 +49,7 @@ function Navbar() {
             to="/"
             className={
               click
-                ? "text-gray-900 hover:text-gray-900 font-sans font-thin no-underline visible shadow-xl lg:inline-block text-4xl leading-none rounded mt-4 lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 p-4"
+                ? "text-gray-900 hover:text-gray-900 no-underline visible shadow-xl lg:inline-block text-4xl leading-none rounded mt-4 lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 p-4"
                 : "text-gray-900 hover:text-gray-900 no-underline z-50 hidden visible shadow-xl lg:inline-block text-sm px-6 leading-none rounded lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300"
             }
             onClick={closeMobileMenu}
@@ -59,7 +62,7 @@ function Navbar() {
             to="/about"
             className={
               click
-                ? "text-gray-900 hover:text-gray-900 font-sans font-thin no-underline visible shadow-xl lg:inline-block text-4xl leading-none rounded mt-4 lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 p-4"
+                ? "text-gray-900 hover:text-gray-900 no-underline visible shadow-xl lg:inline-block text-4xl leading-none rounded mt-4 lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 p-4"
                 : "text-gray-900 hover:text-gray-900 no-underline z-50 hidden visible shadow-xl lg:inline-block text-sm px-6 leading-none rounded lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300"
             }
             onClick={closeMobileMenu}
@@ -72,7 +75,7 @@ function Navbar() {
             to="/projects"
             className={
               click
-                ? "text-gray-900 hover:text-gray-900 font-sans font-thin no-underline visible shadow-xl lg:inline-block text-4xl leading-none rounded mt-4 lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 p-4"
+                ? "text-gray-900 hover:text-gray-900 no-underline visible shadow-xl lg:inline-block text-4xl leading-none rounded mt-4 lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 p-4"
                 : "text-gray-900 hover:text-gray-900 no-underline z-50 hidden visible shadow-xl lg:inline-block text-sm px-6 leading-none rounded lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300"
             }
             onClick={closeMobileMenu}
@@ -85,7 +88,7 @@ function Navbar() {
             to="/classes"
             className={
               click
-                ? "text-gray-900 hover:text-gray-900 font-sans font-thin no-underline visible shadow-xl lg:inline-block text-4xl leading-none rounded mt-4 lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 p-4"
+                ? "text-gray-900 hover:text-gray-900 no-underline visible shadow-xl lg:inline-block text-4xl leading-none rounded mt-4 lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 p-4"
                 : "text-gray-900 hover:text-gray-900 no-underline z-50 hidden visible shadow-xl lg:inline-block text-sm px-6 leading-none rounded lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300"
             }
             onClick={closeMobileMenu}
@@ -98,7 +101,7 @@ function Navbar() {
             to="/footer"
             className={
               click
-                ? "text-gray-900 hover:text-gray-900 font-sans font-thin no-underline visible shadow-xl lg:inline-block text-4xl leading-none rounded mt-4 lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 p-4"
+                ? "text-gray-900 hover:text-gray-900 no-underline visible shadow-xl lg:inline-block text-4xl leading-none rounded mt-4 lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300 p-4"
                 : "text-gray-900 hover:text-gray-900 no-underline z-50 hidden visible shadow-xl lg:inline-block text-sm px-6 leading-none rounded lg:mt-0 transform overflow-hidden hover:shadow-2xl transition hover:-translate-y-1 hover:scale-110 duration-300"
             }
             onClick={closeMobileMenu}
